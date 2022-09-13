@@ -1,4 +1,4 @@
-import { FriendsList } from 'components/FriendList/FriendList.styled';
+// import { FriendsList } from 'components/FriendList/FriendList.styled';
 import PropTypes from 'prop-types';
 import { FriendsListItem, FriendListStatus, FriendsListName } from './FriendsListItem.styled';
 export const FriendListItem = ({ avatar, name, isOnline }) => {
