@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { StatisticsBox, StatisticsTitle, StatisticsList, StatisticsLabel, StatisticsPercentage } from './Statistics.styled';
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
     return (
         <StatisticsBox>
-            <StatisticsTitle>Upload stats</StatisticsTitle>
+            {title && <StatisticsTitle>{title}</StatisticsTitle>}
 
             <StatisticsList>
                 {stats.map(item => (
